@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+.contact {
+  padding: 4%;
+  /* height: 400px; */
+}
+.col-md-3 {
+  background: #202b37;
+  padding: 4%;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.contact-info {
+  margin-top: 10%;
+  overflow: hidden;
+}
+.contact-info img {
+  margin-bottom: 15%;
+}
+.contact-info h2 {
+  margin-bottom: 10%;
+  overflow: hidden;
+}
+.contact-info h4 {
+  overflow: hidden;
+}
+.col-md-9 {
+  background: #fff;
+  padding: 3%;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.contact-form label {
+  font-weight: 600;
+}
+.contact-form button {
+  background: #25274d;
+  color: #fff;
+  font-weight: 600;
+  width: 25%;
+}
+.contact-form button:focus {
+  box-shadow: none;
+}
+.contact-submit {
+  background: #202b37;
+  color: #fff;
+}
+.contact-submit:hover {
+  color: #fff;
+}
+/* MAP CSS ********************* */
+
+.cont {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.address {
+  background: url("../../../img/contact.jpg");
+  background-size: cover;
+  padding: 8% 8%;
+  z-index: 2;
+  height: 90vh;
+}
+.address::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 992px) {
+  .address {
+    width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .address {
+    width: 100%;
+  }
+}
+
+.address-data {
+  color: #fff;
+  margin-bottom: 8%;
+}
+.add-title {
+  font-size: 150%;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1%;
+}
+.add-desc {
+  font-size: 100%;
+  font-family: "Montserrat", sans-serif;
+  color: #c2c2c2;
+}

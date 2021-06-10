@@ -1,0 +1,119 @@
+.courses-title {
+  color: #f0ede7;
+  text-align: center;
+  text-transform: uppercase;
+}
+.courses-line {
+  background-color: #a1989e;
+}
+.course-title {
+  color: #000;
+}
+
+.cse-card {
+  background-color: #f0ede7;
+  /* color: #f0ede7; */
+  transition: all 0.2s ease-in;
+}
+
+.cse-logo {
+  fill: #ec5867;
+  transition: all 0.2s ease-in;
+}
+.cse-card:hover {
+  background: #8f949b;
+  /* background: #f0ede7; */
+  color: #ec5867;
+  cursor: pointer;
+}
+
+.cse-card:hover .cse-logo {
+  fill: #f0ede7;
+}
+.cse-card:hover .course-title {
+  color: #f0ede7;
+}
+
+.mech-card {
+  background-color: #f0ede7;
+  /* color: #f0ede7; */
+  transition: all 0.2s ease-in;
+}
+
+.mech-logo {
+  fill: #ec5867;
+
+  transition: all 0.2s ease-in;
+}
+.mech-card:hover {
+  background: #8f949b;
+  /* background: #f0ede7; */
+  color: #ec5867;
+  cursor: pointer;
+}
+.mech-card:hover .mech-logo {
+  fill: #f0ede7;
+}
+
+.civil-card {
+  background-color: #f0ede7;
+  /* color: #f0ede7; */
+  transition: all 0.2s ease-in;
+}
+
+.civil-logo {
+  fill: #ec5867;
+
+  transition: all 0.2s ease-in;
+}
+.civil-card:hover {
+  background: #8f949b;
+  /* background: #f0ede7; */
+  color: #ec5867;
+  cursor: pointer;
+}
+.civil-card:hover .civil-logo {
+  fill: #f0ede7;
+}
+
+.etc-card {
+  background-color: #f0ede7;
+  /* color: #f0ede7; */
+  transition: all 0.2s ease-in;
+}
+
+.etc-logo {
+  fill: #ec5867;
+
+  transition: all 0.2s ease-in;
+}
+.etc-card:hover {
+  background: #8f949b;
+  /* background: #f0ede7; */
+  color: #ec5867;
+  cursor: pointer;
+}
+.etc-card:hover .etc-logo {
+  fill: #f0ede7;
+}
+
+.ele-card {
+  background-color: #f0ede7;
+  /* color: #f0ede7; */
+  transition: all 0.2s ease-in;
+}
+
+.ele-logo {
+  fill: #ec5867;
+
+  transition: all 0.2s ease-in;
+}
+.ele-card:hover {
+  background: #8f949b;
+  /* background: #f0ede7; */
+  color: #ec5867;
+  cursor: pointer;
+}
+.ele-card:hover .ele-logo {
+  fill: #f0ede7;
+}

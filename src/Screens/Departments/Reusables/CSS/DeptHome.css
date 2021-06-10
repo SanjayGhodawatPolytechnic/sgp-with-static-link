@@ -1,0 +1,72 @@
+.cse {
+  /* background: linear-gradient(169deg, #000000, #e45050);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    -o-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite; */
+}
+
+.deptcont {
+  width: 95vw;
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 26% 0%;
+  }
+  50% {
+    background-position: 75% 100%;
+  }
+  100% {
+    background-position: 26% 0%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 26% 0%;
+  }
+  50% {
+    background-position: 75% 100%;
+  }
+  100% {
+    background-position: 26% 0%;
+  }
+}
+@-o-keyframes AnimationName {
+  0% {
+    background-position: 26% 0%;
+  }
+  50% {
+    background-position: 75% 100%;
+  }
+  100% {
+    background-position: 26% 0%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 26% 0%;
+  }
+  50% {
+    background-position: 75% 100%;
+  }
+  100% {
+    background-position: 26% 0%;
+  }
+}
+.illustration-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.outsource {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

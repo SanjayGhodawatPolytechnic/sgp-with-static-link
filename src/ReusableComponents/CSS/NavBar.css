@@ -1,0 +1,134 @@
+.contains {
+  padding: 0;
+}
+.navbar-cont {
+  height: 50px;
+}
+header {
+  position: absolute;
+  margin-bottom: 30px;
+  left: 0;
+  background: #202b37; /*header colour*/
+  /* background: #f4ecd6; */
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 20;
+  margin: 0;
+  font-weight: 700;
+}
+header .logo {
+  color: #fff; /*logo colour*/
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  float: left;
+  font-weight: bold;
+  margin-left: 10px;
+}
+header nav {
+  float: right;
+  padding-right: 0;
+  /* padding-right: 100px; */
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+header nav ul li {
+  list-style: none;
+  position: relative;
+}
+header nav ul li.sub-menu:before {
+  content: "";
+  font-family: fontAwesome;
+  position: absolute;
+  line-height: 50px;
+  color: #fff; /*arrow colour*/
+  right: 5px;
+}
+header nav ul li.active.sub-menu:before {
+  content: "";
+}
+header nav ul li ul {
+  position: absolute;
+  left: 0;
+  background: #202b37; /*submenu colour*/
+  display: none;
+}
+header nav ul li.active ul {
+  display: block;
+}
+header nav ul li ul li {
+  display: block;
+  width: 250px;
+}
+
+header nav ul li .a {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  color: #fff; /*header text colour*/
+  text-decoration: none;
+  display: block;
+}
+header nav ul li .a:hover {
+  color: #fff;
+  background: #ff3c38;
+}
+.menu-toggle {
+  color: #fff;
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+  margin-right: 10px;
+}
+
+.last {
+  margin-right: 20px;
+}
+@media (max-width: 1200px) {
+  header {
+    padding: 0 0px;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  header nav {
+    position: absolute;
+    width: 100%;
+    height: calc(170vh - 20px);
+    background: #202b37;
+    top: 50px;
+    left: -100%;
+    transition: 0.5s;
+    padding-right: 10px;
+  }
+  header nav.active {
+    left: 0;
+  }
+  header nav ul {
+    display: block;
+    text-align: left;
+  }
+  header nav ul li .a {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    /* color: #202b37; */
+  }
+
+  header nav ul li.active ul {
+    position: relative;
+    background: #b7b7a4; /*submenu colour in mobile view*/
+    color: #202b37;
+  }
+  header nav ul li.active ul li {
+    /* position: relative;
+    background: #b7b7a4;  */
+    color: #202b37;
+  }
+  header nav ul li ul li {
+    width: 100%;
+  }
+}

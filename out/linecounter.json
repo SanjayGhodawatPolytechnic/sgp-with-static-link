@@ -1,0 +1,1381 @@
+{
+    "extension": "linecounter",
+    "version": "0.2.7",
+    "workspace": "d:\\mega project\\sgpoly",
+    "linecount": [
+        {
+            "version": "0.2.7",
+            "counttime": "2021-03-28 22:48:28",
+            "filesum": 216,
+            "codesum": 34758,
+            "commentsum": 577,
+            "blanksum": 12110,
+            "statistics": {
+                ".css": {
+                    "code": 2786,
+                    "comment": 173,
+                    "blank": 243
+                },
+                ".js": {
+                    "code": 11934,
+                    "comment": 367,
+                    "blank": 1015
+                },
+                ".md": {
+                    "code": 41,
+                    "comment": 12,
+                    "blank": 38
+                },
+                "": {
+                    "code": 18,
+                    "comment": 2,
+                    "blank": 5
+                },
+                ".txt": {
+                    "code": 3,
+                    "comment": 1,
+                    "blank": 0
+                },
+                ".json": {
+                    "code": 16916,
+                    "comment": 0,
+                    "blank": 2
+                },
+                ".html": {
+                    "code": 39,
+                    "comment": 22,
+                    "blank": 11
+                },
+                ".log": {
+                    "code": 14,
+                    "comment": 0,
+                    "blank": 2
+                },
+                ".scss": {
+                    "code": 173,
+                    "comment": 0,
+                    "blank": 32
+                },
+                ".lock": {
+                    "code": 2834,
+                    "comment": 0,
+                    "blank": 10762
+                }
+            },
+            "filelist": [
+                {
+                    "blank": 5,
+                    "code": 18,
+                    "comment": 1,
+                    "filename": ".gitignore"
+                },
+                {
+                    "blank": 2,
+                    "code": 14,
+                    "comment": 0,
+                    "filename": "debug.log"
+                },
+                {
+                    "blank": 0,
+                    "code": 16824,
+                    "comment": 0,
+                    "filename": "package-lock.json"
+                },
+                {
+                    "blank": 2,
+                    "code": 67,
+                    "comment": 0,
+                    "filename": "package.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 1,
+                    "filename": "public\\_redirects"
+                },
+                {
+                    "filename": "public\\favicon.ico",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 11,
+                    "code": 39,
+                    "comment": 22,
+                    "filename": "public\\index.html"
+                },
+                {
+                    "blank": 0,
+                    "code": 25,
+                    "comment": 0,
+                    "filename": "public\\manifest.json"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 1,
+                    "filename": "public\\robots.txt"
+                },
+                {
+                    "blank": 38,
+                    "code": 41,
+                    "comment": 12,
+                    "filename": "README.md"
+                },
+                {
+                    "blank": 6,
+                    "code": 26,
+                    "comment": 0,
+                    "filename": "src\\Admin\\auth\\AdminRoutes.js"
+                },
+                {
+                    "blank": 25,
+                    "code": 108,
+                    "comment": 5,
+                    "filename": "src\\Admin\\CSS\\Login.css"
+                },
+                {
+                    "blank": 26,
+                    "code": 334,
+                    "comment": 4,
+                    "filename": "src\\Admin\\Dashboard.js"
+                },
+                {
+                    "blank": 13,
+                    "code": 85,
+                    "comment": 0,
+                    "filename": "src\\Admin\\login.js"
+                },
+                {
+                    "blank": 11,
+                    "code": 305,
+                    "comment": 0,
+                    "filename": "src\\Admin\\screens\\AddStaffMember.js"
+                },
+                {
+                    "blank": 28,
+                    "code": 285,
+                    "comment": 11,
+                    "filename": "src\\Admin\\screens\\AddStory.js"
+                },
+                {
+                    "blank": 10,
+                    "code": 87,
+                    "comment": 0,
+                    "filename": "src\\Admin\\screens\\contact.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 45,
+                    "comment": 0,
+                    "filename": "src\\Admin\\screens\\contactnum.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 81,
+                    "comment": 0,
+                    "filename": "src\\Admin\\screens\\CSS\\AddStaffMember.css"
+                },
+                {
+                    "blank": 0,
+                    "code": 37,
+                    "comment": 0,
+                    "filename": "src\\Admin\\screens\\CSS\\Contact.css"
+                },
+                {
+                    "blank": 2,
+                    "code": 80,
+                    "comment": 0,
+                    "filename": "src\\Admin\\screens\\CSS\\Form.css"
+                },
+                {
+                    "blank": 1,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": "src\\Admin\\screens\\CSS\\ManageHighlights.css"
+                },
+                {
+                    "blank": 19,
+                    "code": 199,
+                    "comment": 0,
+                    "filename": "src\\Admin\\screens\\ManageAchivements.js"
+                },
+                {
+                    "blank": 29,
+                    "code": 413,
+                    "comment": 4,
+                    "filename": "src\\Admin\\screens\\ManageActivities.js"
+                },
+                {
+                    "blank": 34,
+                    "code": 131,
+                    "comment": 11,
+                    "filename": "src\\Admin\\screens\\ManageHighlights.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 56,
+                    "comment": 0,
+                    "filename": "src\\Admin\\screens\\reusables\\AchivementsCard.js"
+                },
+                {
+                    "blank": 10,
+                    "code": 69,
+                    "comment": 0,
+                    "filename": "src\\Admin\\screens\\Studpics.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 45,
+                    "comment": 0,
+                    "filename": "src\\Admin\\screens\\suggest.js"
+                },
+                {
+                    "blank": 9,
+                    "code": 56,
+                    "comment": 0,
+                    "filename": "src\\Admin\\UpdatesCard.js"
+                },
+                {
+                    "filename": "src\\assets\\logo.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\img\\1.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\img\\2.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\img\\3.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\img\\banner 4.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\img\\banner.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\img\\banner2.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\img\\banner3.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\img\\contact.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\img\\logo.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "filename": "src\\img\\logo3.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 1,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "src\\index.css"
+                },
+                {
+                    "blank": 0,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "src\\index.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 23,
+                    "comment": 0,
+                    "filename": "src\\ReusableComponents\\Card.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 14,
+                    "comment": 0,
+                    "filename": "src\\ReusableComponents\\CSS\\header.css"
+                },
+                {
+                    "blank": 0,
+                    "code": 36,
+                    "comment": 0,
+                    "filename": "src\\ReusableComponents\\CSS\\Loader.css"
+                },
+                {
+                    "blank": 5,
+                    "code": 35,
+                    "comment": 4,
+                    "filename": "src\\ReusableComponents\\CSS\\main.css"
+                },
+                {
+                    "blank": 16,
+                    "code": 105,
+                    "comment": 3,
+                    "filename": "src\\ReusableComponents\\CSS\\Menu.css"
+                },
+                {
+                    "blank": 4,
+                    "code": 118,
+                    "comment": 0,
+                    "filename": "src\\ReusableComponents\\CSS\\NavBar.css"
+                },
+                {
+                    "filename": "src\\ReusableComponents\\CSS\\sguni.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 5,
+                    "code": 104,
+                    "comment": 0,
+                    "filename": "src\\ReusableComponents\\Footer.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 10,
+                    "comment": 0,
+                    "filename": "src\\ReusableComponents\\Header.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "src\\ReusableComponents\\Loader.js"
+                },
+                {
+                    "blank": 9,
+                    "code": 37,
+                    "comment": 0,
+                    "filename": "src\\ReusableComponents\\Main.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 65,
+                    "comment": 27,
+                    "filename": "src\\ReusableComponents\\MoreUpdates.js"
+                },
+                {
+                    "blank": 16,
+                    "code": 442,
+                    "comment": 0,
+                    "filename": "src\\ReusableComponents\\NavBar.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "src\\ReusableComponents\\NotFound.js"
+                },
+                {
+                    "blank": 8,
+                    "code": 83,
+                    "comment": 6,
+                    "filename": "src\\ReusableComponents\\PDFModal.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 59,
+                    "comment": 4,
+                    "filename": "src\\Routes.css"
+                },
+                {
+                    "blank": 31,
+                    "code": 423,
+                    "comment": 20,
+                    "filename": "src\\Routes.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 42,
+                    "comment": 0,
+                    "filename": "src\\Screens\\About\\achievement.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 47,
+                    "comment": 0,
+                    "filename": "src\\Screens\\About\\Activities.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 47,
+                    "comment": 0,
+                    "filename": "src\\Screens\\About\\affiliation.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 91,
+                    "comment": 0,
+                    "filename": "src\\Screens\\About\\components\\ImageGallery.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 8,
+                    "comment": 0,
+                    "filename": "src\\Screens\\About\\css\\about.css"
+                },
+                {
+                    "blank": 0,
+                    "code": 2,
+                    "comment": 0,
+                    "filename": "src\\Screens\\About\\css\\imagegallery.css"
+                },
+                {
+                    "blank": 1,
+                    "code": 30,
+                    "comment": 0,
+                    "filename": "src\\Screens\\About\\css\\Popup.css"
+                },
+                {
+                    "blank": 4,
+                    "code": 44,
+                    "comment": 0,
+                    "filename": "src\\Screens\\About\\differentiator.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 50,
+                    "comment": 0,
+                    "filename": "src\\Screens\\About\\logo.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 41,
+                    "comment": 0,
+                    "filename": "src\\Screens\\About\\philosophy.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 61,
+                    "comment": 0,
+                    "filename": "src\\Screens\\About\\quality.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 30,
+                    "comment": 0,
+                    "filename": "src\\Screens\\About\\sgp.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 140,
+                    "comment": 0,
+                    "filename": "src\\Screens\\About\\SocialResponsiblities.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 121,
+                    "comment": 0,
+                    "filename": "src\\Screens\\About\\vision.js"
+                },
+                {
+                    "blank": 16,
+                    "code": 97,
+                    "comment": 7,
+                    "filename": "src\\Screens\\Academics\\Academic Calendar\\AcademicCalendars.js"
+                },
+                {
+                    "blank": 8,
+                    "code": 91,
+                    "comment": 1,
+                    "filename": "src\\Screens\\Academics\\AtrocityCommittee.js"
+                },
+                {
+                    "blank": 8,
+                    "code": 81,
+                    "comment": 1,
+                    "filename": "src\\Screens\\Academics\\Comittee.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 79,
+                    "comment": 1,
+                    "filename": "src\\Screens\\Academics\\GrievenceCommittee.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 21,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Academics\\Menus\\CommitteeMenu.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 7,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Academics\\Menus\\CommitteeNavLinks.js"
+                },
+                {
+                    "blank": 8,
+                    "code": 89,
+                    "comment": 1,
+                    "filename": "src\\Screens\\Academics\\VishakhaCell.js"
+                },
+                {
+                    "blank": 10,
+                    "code": 240,
+                    "comment": 1,
+                    "filename": "src\\Screens\\Admission\\Admission.css"
+                },
+                {
+                    "blank": 9,
+                    "code": 318,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Admission\\Admission.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 101,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Contact\\Administrative.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 68,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Contact\\Admissioncell.js"
+                },
+                {
+                    "blank": 15,
+                    "code": 167,
+                    "comment": 6,
+                    "filename": "src\\Screens\\Contact\\Contact.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 3,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Contact\\CSS\\administrative.css"
+                },
+                {
+                    "blank": 6,
+                    "code": 99,
+                    "comment": 2,
+                    "filename": "src\\Screens\\Contact\\CSS\\Contact.css"
+                },
+                {
+                    "blank": 0,
+                    "code": 4,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Contact\\CSS\\Map.css"
+                },
+                {
+                    "blank": 7,
+                    "code": 40,
+                    "comment": 1,
+                    "filename": "src\\Screens\\Contact\\Map.js"
+                },
+                {
+                    "blank": 9,
+                    "code": 117,
+                    "comment": 12,
+                    "filename": "src\\Screens\\Departments\\Civil\\AcademicCalender.js"
+                },
+                {
+                    "blank": 10,
+                    "code": 148,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\Civil\\Achivements.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 85,
+                    "comment": 2,
+                    "filename": "src\\Screens\\Departments\\Civil\\Activities.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 54,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\Civil\\Civil.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 79,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\Civil\\HODDesk.js"
+                },
+                {
+                    "blank": 9,
+                    "code": 121,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\Civil\\Laboratories.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\Civil\\Navlinks.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 127,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\Civil\\Outcomes.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 90,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\Civil\\Publications.js"
+                },
+                {
+                    "blank": 8,
+                    "code": 87,
+                    "comment": 9,
+                    "filename": "src\\Screens\\Departments\\Civil\\StaffProfile.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 68,
+                    "comment": 3,
+                    "filename": "src\\Screens\\Departments\\Civil\\TechnicalStaff.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 88,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\Civil\\VisionMission.js"
+                },
+                {
+                    "blank": 13,
+                    "code": 93,
+                    "comment": 12,
+                    "filename": "src\\Screens\\Departments\\CSE\\AcademicCalender.js"
+                },
+                {
+                    "blank": 22,
+                    "code": 98,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\CSE\\Achivements.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 77,
+                    "comment": 2,
+                    "filename": "src\\Screens\\Departments\\CSE\\Activities.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 48,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\CSE\\ComputerScience.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 18,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\CSE\\CSS\\academiccalender.css"
+                },
+                {
+                    "blank": 3,
+                    "code": 51,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\CSE\\HODDesk.js"
+                },
+                {
+                    "blank": 9,
+                    "code": 121,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\CSE\\Laboratories.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 14,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\CSE\\NavLinks.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 55,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\CSE\\Outcomes.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 66,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\CSE\\Publications.js"
+                },
+                {
+                    "blank": 10,
+                    "code": 61,
+                    "comment": 9,
+                    "filename": "src\\Screens\\Departments\\CSE\\StaffProfile.js"
+                },
+                {
+                    "blank": 8,
+                    "code": 54,
+                    "comment": 3,
+                    "filename": "src\\Screens\\Departments\\CSE\\TechnicalStaff.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 108,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\CSE\\VisionMission.js"
+                },
+                {
+                    "blank": 9,
+                    "code": 117,
+                    "comment": 12,
+                    "filename": "src\\Screens\\Departments\\Electical\\AcademicCalender.js"
+                },
+                {
+                    "blank": 10,
+                    "code": 148,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\Electical\\Achivements.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 85,
+                    "comment": 2,
+                    "filename": "src\\Screens\\Departments\\Electical\\Activities.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 59,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\Electical\\Electrical.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 47,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\Electical\\HODDesk.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 16,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\Electical\\NavLinks.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 78,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\Electical\\Outcomes.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 90,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\Electical\\Publications.js"
+                },
+                {
+                    "blank": 8,
+                    "code": 87,
+                    "comment": 3,
+                    "filename": "src\\Screens\\Departments\\Electical\\StaffProfile.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 68,
+                    "comment": 3,
+                    "filename": "src\\Screens\\Departments\\Electical\\TechStaff.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 86,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\Electical\\VisionMission.js"
+                },
+                {
+                    "blank": 9,
+                    "code": 117,
+                    "comment": 12,
+                    "filename": "src\\Screens\\Departments\\ETC\\AcademicCalender.js"
+                },
+                {
+                    "blank": 10,
+                    "code": 148,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\ETC\\Achivements.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 85,
+                    "comment": 2,
+                    "filename": "src\\Screens\\Departments\\ETC\\Activities.js"
+                },
+                {
+                    "blank": 6,
+                    "code": 35,
+                    "comment": 1,
+                    "filename": "src\\Screens\\Departments\\ETC\\ElectronicsNTC.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 54,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\ETC\\ETCHODDesk.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 30,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\ETC\\ETCOutcomes.js"
+                },
+                {
+                    "blank": 8,
+                    "code": 87,
+                    "comment": 3,
+                    "filename": "src\\Screens\\Departments\\ETC\\ETCStaffProfile.js"
+                },
+                {
+                    "blank": 7,
+                    "code": 68,
+                    "comment": 3,
+                    "filename": "src\\Screens\\Departments\\ETC\\ETCTechStaff.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 63,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\ETC\\ETCVisionMission.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 13,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\ETC\\NavLinks.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 90,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\ETC\\Publications.js"
+                },
+                {
+                    "blank": 8,
+                    "code": 44,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\MECH\\Mechanical.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 26,
+                    "comment": 1,
+                    "filename": "src\\Screens\\Departments\\MECH\\MechHODDesk.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 9,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\MECH\\NavLinks.js"
+                },
+                {
+                    "blank": 8,
+                    "code": 111,
+                    "comment": 2,
+                    "filename": "src\\Screens\\Departments\\Reusables\\ActivityCard.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 20,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\Reusables\\CSS\\Activity.css"
+                },
+                {
+                    "blank": 2,
+                    "code": 28,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\Reusables\\CSS\\DeptHome.css"
+                },
+                {
+                    "blank": 4,
+                    "code": 31,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\Reusables\\CSS\\HOD.css"
+                },
+                {
+                    "blank": 0,
+                    "code": 164,
+                    "comment": 1,
+                    "filename": "src\\Screens\\Departments\\Reusables\\CSS\\LabCard.css"
+                },
+                {
+                    "blank": 32,
+                    "code": 173,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\Reusables\\CSS\\LabCard.scss"
+                },
+                {
+                    "blank": 2,
+                    "code": 22,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\Reusables\\CSS\\Outcomes.css"
+                },
+                {
+                    "blank": 46,
+                    "code": 192,
+                    "comment": 1,
+                    "filename": "src\\Screens\\Departments\\Reusables\\CSS\\StaffCard.css"
+                },
+                {
+                    "blank": 7,
+                    "code": 285,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\Reusables\\CSS\\VisionMission.css"
+                },
+                {
+                    "blank": 4,
+                    "code": 21,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\Reusables\\DeptMenu.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\Reusables\\helper\\getPublications.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 60,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\Reusables\\LabCard.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 55,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Departments\\Reusables\\Outcomes.js"
+                },
+                {
+                    "blank": 9,
+                    "code": 85,
+                    "comment": 20,
+                    "filename": "src\\Screens\\Departments\\Reusables\\StaffCard.js"
+                },
+                {
+                    "blank": 8,
+                    "code": 82,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Extra\\Suggest.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 56,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Facilities\\ground.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 32,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Facilities\\gymnasium.js"
+                },
+                {
+                    "blank": 12,
+                    "code": 57,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Facilities\\hostel.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 44,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Facilities\\laboratories.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 49,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Facilities\\more.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 80,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Facilities\\pool.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 38,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Facilities\\tennis.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 4,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Home\\components\\carousel.css"
+                },
+                {
+                    "blank": 9,
+                    "code": 87,
+                    "comment": 3,
+                    "filename": "src\\Screens\\Home\\components\\Carousel.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 39,
+                    "comment": 3,
+                    "filename": "src\\Screens\\Home\\components\\Counter.css"
+                },
+                {
+                    "blank": 6,
+                    "code": 109,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Home\\components\\Counter.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 40,
+                    "comment": 1,
+                    "filename": "src\\Screens\\Home\\components\\Highlights.css"
+                },
+                {
+                    "blank": 21,
+                    "code": 143,
+                    "comment": 18,
+                    "filename": "src\\Screens\\Home\\components\\Highlights.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 16,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Home\\components\\icons\\PassedIcon.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 16,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Home\\components\\icons\\TeacherIcon.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 16,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Home\\components\\icons\\ThisYear.js"
+                },
+                {
+                    "filename": "src\\Screens\\Home\\components\\img_bg_4.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 15,
+                    "code": 128,
+                    "comment": 2,
+                    "filename": "src\\Screens\\Home\\components\\Imp.css"
+                },
+                {
+                    "blank": 2,
+                    "code": 69,
+                    "comment": 3,
+                    "filename": "src\\Screens\\Home\\components\\Imp.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 14,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Home\\components\\Recents.css"
+                },
+                {
+                    "blank": 8,
+                    "code": 135,
+                    "comment": 52,
+                    "filename": "src\\Screens\\Home\\components\\Recents.js"
+                },
+                {
+                    "blank": 13,
+                    "code": 87,
+                    "comment": 8,
+                    "filename": "src\\Screens\\Home\\components\\Testimo.css"
+                },
+                {
+                    "blank": 5,
+                    "code": 63,
+                    "comment": 1,
+                    "filename": "src\\Screens\\Home\\components\\Testimo.js"
+                },
+                {
+                    "blank": 14,
+                    "code": 147,
+                    "comment": 129,
+                    "filename": "src\\Screens\\Home\\components\\Updates.css"
+                },
+                {
+                    "blank": 18,
+                    "code": 145,
+                    "comment": 41,
+                    "filename": "src\\Screens\\Home\\components\\Updates.js"
+                },
+                {
+                    "filename": "src\\Screens\\Home\\components\\vacation.jpg",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 9,
+                    "code": 80,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Home\\CSS\\DeptCard.css"
+                },
+                {
+                    "blank": 17,
+                    "code": 97,
+                    "comment": 3,
+                    "filename": "src\\Screens\\Home\\Home.css"
+                },
+                {
+                    "blank": 7,
+                    "code": 90,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Home\\Home.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 14,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Home\\icons\\Civil.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 16,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Home\\icons\\CSE.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 14,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Home\\icons\\Elect.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 14,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Home\\icons\\ENTC.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 5,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Home\\icons\\index.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 14,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Home\\icons\\Mech.js"
+                },
+                {
+                    "filename": "src\\Screens\\Home\\website.png",
+                    "isbinaryfile": true,
+                    "blank": 0,
+                    "code": 0,
+                    "comment": 0
+                },
+                {
+                    "blank": 7,
+                    "code": 66,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Infrastructure\\about.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 39,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Infrastructure\\amphi.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 48,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Infrastructure\\auditorium.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 32,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Infrastructure\\classroom.js"
+                },
+                {
+                    "blank": 4,
+                    "code": 48,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Infrastructure\\conference.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 4,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Infrastructure\\CSS\\infrastructure.css"
+                },
+                {
+                    "blank": 2,
+                    "code": 35,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Infrastructure\\CSS\\Overview.css"
+                },
+                {
+                    "blank": 5,
+                    "code": 69,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Infrastructure\\foodcourt.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 150,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Infrastructure\\Overview.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 41,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Infrastructure\\workshop.js"
+                },
+                {
+                    "blank": 9,
+                    "code": 92,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Management\\board.js"
+                },
+                {
+                    "blank": 5,
+                    "code": 29,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Management\\chairman.js"
+                },
+                {
+                    "blank": 13,
+                    "code": 89,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Management\\CSS\\board.css"
+                },
+                {
+                    "blank": 1,
+                    "code": 161,
+                    "comment": 6,
+                    "filename": "src\\Screens\\Management\\CSS\\chairman.css"
+                },
+                {
+                    "blank": 3,
+                    "code": 19,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Management\\CSS\\management.css"
+                },
+                {
+                    "blank": 22,
+                    "code": 69,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Management\\directors.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 12,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Management\\govern.js"
+                },
+                {
+                    "blank": 0,
+                    "code": 26,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Management\\principal.js"
+                },
+                {
+                    "blank": 1,
+                    "code": 31,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Management\\secretary.js"
+                },
+                {
+                    "blank": 11,
+                    "code": 37,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Management\\trust.js"
+                },
+                {
+                    "blank": 2,
+                    "code": 28,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Management\\trustee.js"
+                },
+                {
+                    "blank": 3,
+                    "code": 6,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Student\\CSS\\Home.css"
+                },
+                {
+                    "blank": 9,
+                    "code": 263,
+                    "comment": 0,
+                    "filename": "src\\Screens\\Student\\home.js"
+                },
+                {
+                    "blank": 11,
+                    "code": 110,
+                    "comment": 1,
+                    "filename": "src\\Screens\\Student\\uploadimage.js"
+                },
+                {
+                    "blank": 15,
+                    "code": 95,
+                    "comment": 31,
+                    "filename": "src\\serviceWorker.js"
+                },
+                {
+                    "blank": 10762,
+                    "code": 2834,
+                    "comment": 0,
+                    "filename": "yarn.lock"
+                }
+            ]
+        }
+    ]
+}

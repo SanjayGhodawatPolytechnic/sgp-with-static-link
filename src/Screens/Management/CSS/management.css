@@ -1,0 +1,22 @@
+.trust {
+    border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+    box-shadow: 20px 20px rgba(0,0,0,.15);
+    transition: all .4s ease;
+  }
+
+.trust-image{
+  box-shadow: 5px 5px 5px rgba(53, 53, 53, 0.15);
+  transition: all .4s ease;
+}
+
+  .size-setting{
+    max-width: 700px;
+    height: 500px;
+    position: relative;
+    margin: auto;
+  }
+
+.mar{
+  margin-left: 40px;
+  margin-right: 40px;
+}

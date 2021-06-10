@@ -1,0 +1,13 @@
+.givmar {
+  margin: 0 40px;
+
+  align-items: center;
+}
+
+.abtlogo {
+  max-width: 200px;
+  max-height: 200px;
+}
+.setWidth {
+  width: 40vw;
+}
