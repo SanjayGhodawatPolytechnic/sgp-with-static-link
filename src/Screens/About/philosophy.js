@@ -9,7 +9,7 @@ function aboutPhilosophy() {
       <div className="givmar">
         <br />
         <br />
-        <div className="row">
+        {/* <div className="row">
           <div className="col-lg-2 col-md-2 col-sm-1 col-0"></div>
           <img
             src={"http://www.sgipolytechnic.in/Images/Philosophy.jpg"}
@@ -17,7 +17,7 @@ function aboutPhilosophy() {
             alt="..."
           />
           <div className="col-lg-2 col-md-2 col-sm-1 col-0"></div>
-        </div>
+        </div> */}
 
         <br />
         <br />

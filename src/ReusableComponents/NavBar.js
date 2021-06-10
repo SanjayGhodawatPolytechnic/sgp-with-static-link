@@ -376,7 +376,7 @@ const NavBar = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/infrastructure/classNameroom" className="a">
+                    <Link to="/infrastructure/classroom" className="a">
                       Class rooms
                     </Link>
                   </li>
@@ -396,10 +396,20 @@ const NavBar = () => {
                     </Link>
                   </li>
                   <li>
+                    <Link to="/infrastructure/auditorium" className="a">
+                      Auditorium
+                    </Link>
+                  </li>
+                  <li>
                     <Link to="/infrastructure/conference" className="a">
                       Conference Hall
                     </Link>
                   </li>
+                  {/* <li>
+                    <Link to="/infrastructure/amphi" className="a">
+                      Amphi Theatre
+                    </Link>
+                  </li> */}
                   <li>
                     <Link to="/infrastructure/foodcourt" className="a">
                       Cafeteria

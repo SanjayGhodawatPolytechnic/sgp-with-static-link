@@ -140,7 +140,7 @@ firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
 const Routes = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(true);
   const [modalData, setModalData] = useState({
     imageURL: "",
     moreInfoURL: "",
@@ -150,26 +150,26 @@ const Routes = () => {
     setIsModalOpen(false);
   };
 
-  const getModalData = () => {
-    firebase
-      .database()
-      .ref("modal")
-      .on("value", (snapshot) => {
-        if (snapshot.val()) {
-          setModalData({
-            ...modalData,
-            imageURL: snapshot.val().imageURL,
-            moreInfoURL: snapshot.val().moreInfoURL,
-          });
-          console.log(snapshot.val().moreInfoURL);
-          setIsModalOpen(true);
-        }
-      });
-  };
+  // const getModalData = () => {
+  //   firebase
+  //     .database()
+  //     .ref("modal")
+  //     .on("value", (snapshot) => {
+  //       if (snapshot.val()) {
+  //         setModalData({
+  //           ...modalData,
+  //           imageURL: snapshot.val().imageURL,
+  //           moreInfoURL: snapshot.val().moreInfoURL,
+  //         });
+  //         console.log(snapshot.val().moreInfoURL);
+  //         setIsModalOpen(true);
+  //       }
+  //     });
+  // };
 
-  useEffect(() => {
-    getModalData();
-  }, []);
+  // useEffect(() => {
+  //   getModalData();
+  // }, []);
 
   return (
     <BrowserRouter basename="/">
@@ -192,17 +192,17 @@ const Routes = () => {
               <i aria-hidden="true" className="fas fa-times-circle fa-2x"></i>
             </button>
           </div>
-          <div className="more-info">
+          {/* <div className="more-info">
             <a
               target="blank"
-              href={modalData.moreInfoURL}
+              href="./img/modal.jpg"
               className="btn btn-info rounded"
             >
               More Info
             </a>
-          </div>
+          </div> */}
           <img
-            src={modalData.imageURL}
+            src={require("./img/modal.jpg")}
             alt="modal"
             className="modal-img img-fluid"
           />
@@ -558,8 +558,6 @@ const Routes = () => {
         <Route path="/infrastructure/amphi" exact component={amphi} />
 
         {/* --------------------FACILITIES------------------------------------------------*/}
-
-        <Route path="/facilities/hostel" exact component={hostel} />
 
         <Route path="/facilities/hostel" exact component={hostel} />
         <Route path="/facilities/gymnasium" exact component={gymnasium} />

@@ -1,6 +1,7 @@
 import React from "react";
 
 import Main from "../../ReusableComponents/Main";
+import _ from "lodash";
 
 const tennis = () => {
   const Items = [
@@ -39,12 +40,12 @@ const tennis = () => {
           </h1>
           <hr className="mt-2 mb-5" />
           <div className="row text-center text-lg-left">
-            {Items.map((d, i) => (
+            {_.range(1, 7).map((val, idx) => (
               <div className="col-lg-3 col-md-4 col-6">
                 <a href="#" className="d-block mb-4 h-100">
                   <img
                     className="img-fluid img-thumbnail"
-                    src={d.image}
+                    src={require(`../../img/facilities/tennis/Tennis_Court${val}.jpg`)}
                     alt=""
                   />
                 </a>

@@ -1,6 +1,7 @@
 import React from "react";
 import "./CSS/Overview.css";
 import Main from "../../ReusableComponents/Main";
+import _ from "lodash";
 
 const amphi = () => {
   const Items = [
@@ -34,11 +35,11 @@ const amphi = () => {
     <Main>
       <div className="main">
         <div className="grid-container">
-          {Items.map((d, i) => (
+          {_.range(1, 7).map((val, idx) => (
             <div>
               <img
-                className={`grid-item grid-item-${i}`}
-                src={d.image}
+                className={`grid-item grid-item-${idx}`}
+                src={require(`../../img/facilities/Theatre/Amphi_Theatre${val}.jpg`)}
                 alt="amphi"
               />
             </div>
