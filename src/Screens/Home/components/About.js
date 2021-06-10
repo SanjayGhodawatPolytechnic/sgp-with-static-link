@@ -24,7 +24,7 @@ const AboutHome = () => {
         </div>
         <div className=" solid-sec">
           <img
-            src="https://firebasestorage.googleapis.com/v0/b/sgpoly-86d3b.appspot.com/o/staticFiles%2FD%20block%20(1).jpg?alt=media&token=c6108113-d285-431d-be79-293d40ebc356"
+            src={require(`../../../img/home/about/Dblock.jpg`)}
             alt=""
             className="img-about"
           />
