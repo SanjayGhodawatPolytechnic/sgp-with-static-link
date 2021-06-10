@@ -1,27 +1,10 @@
 import React from "react";
-import * as firebase from "firebase";
-import { useState } from "react";
-import { useEffect } from "react";
+
 import Marquee from "react-fast-marquee";
+import _ from "lodash";
 
 import "./Recruters.css";
 const Recruters = () => {
-  const [data, setData] = useState([]);
-
-  const getRec = async () => {
-    let dataRef = firebase.database().ref("recruiters");
-    dataRef.on("value", (dataSnapshot) => {
-      if (dataSnapshot.val()) {
-        let result = Object.values(dataSnapshot.val());
-        setData(result);
-      }
-    });
-  };
-
-  useEffect(() => {
-    getRec();
-  }, []);
-
   return (
     <div className="img-gallery-container">
       <div className="courses-title">
@@ -36,10 +19,14 @@ const Recruters = () => {
           pauseOnClick={true}
         >
           <div className="">
-            {data.map((d, i) => {
+            {_.range(1, 6).map((i) => {
               return (
                 <div className="Marquee-tag recruit" key={i}>
-                  <img className="recruit-img" src={d.URL} alt="" />
+                  <img
+                    className="recruit-img"
+                    src={require(`../../../img/home/recruit/r${i}.png`)}
+                    alt=""
+                  />
                 </div>
               );
             })}

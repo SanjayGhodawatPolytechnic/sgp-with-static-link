@@ -1,26 +1,10 @@
 import React from "react";
 import "./ImgCarousel.css";
-import * as firebase from "firebase";
-import { useState } from "react";
-import { useEffect } from "react";
+
 import Marquee from "react-fast-marquee";
+import _ from "lodash";
 
 function ImgCarousel() {
-  const [data, setData] = useState([]);
-
-  const getImg = () => {
-    let dataRef = firebase.database().ref("imgGallery");
-    dataRef.on("value", (dataSnapshot) => {
-      if (dataSnapshot.val()) {
-        let result = Object.values(dataSnapshot.val());
-        setData(result);
-      }
-    });
-  };
-
-  useEffect(() => {
-    getImg();
-  }, []);
   return (
     <div className="img-gallery-container">
       <div className="courses-title">
@@ -36,10 +20,13 @@ function ImgCarousel() {
           className="mq-cont"
         >
           <div>
-            {data.map((d, i) => {
+            {_.range(1, 26).map((d) => {
               return (
-                <div className="Marquee-tag" key={i}>
-                  <img src={d.URL} alt="" />
+                <div className="Marquee-tag" key={d}>
+                  <img
+                    src={require(`../../../img/facilities/Students/${d}.jpg`)}
+                    alt=""
+                  />
                 </div>
               );
             })}

@@ -1,4 +1,5 @@
 import React from "react";
+import _ from "lodash";
 
 //imports for carousel
 
@@ -13,24 +14,6 @@ import { useEffect } from "react";
 
 // TODO:Delete This Component
 const Carousel = ({ setIsCarouselLoading }) => {
-  const [data, setData] = useState([]);
-
-  const getCaro = async () => {
-    setIsCarouselLoading(true);
-    let dataRef = firebase.database().ref("carousel");
-    dataRef.on("value", (dataSnapshot) => {
-      if (dataSnapshot.val()) {
-        let result = Object.values(dataSnapshot.val());
-        setData(result);
-        setIsCarouselLoading(false);
-      }
-    });
-  };
-
-  useEffect(() => {
-    getCaro();
-  }, []);
-
   return (
     <div className=" css-caro">
       <div
@@ -39,8 +22,8 @@ const Carousel = ({ setIsCarouselLoading }) => {
         data-ride="carousel"
       >
         <ol className="carousel-indicators">
-          {data.map((d, i) => {
-            if (i == 0) {
+          {_.range(1, 7).map((i) => {
+            if (i == 1) {
               return (
                 <li
                   data-target="#carouselExampleIndicators"
@@ -60,21 +43,25 @@ const Carousel = ({ setIsCarouselLoading }) => {
           })}
         </ol>
         <div className="carousel-inner">
-          {data.map((d, i) => {
-            if (i == 0) {
+          {_.range(1, 7).map((i, d) => {
+            if (i == 1) {
               return (
                 <div className="carousel-item active w-100" key={i}>
                   <img
                     className="d-block w-100 bgset"
-                    src={data[0].URL}
-                    alt={data[0].ImageName}
+                    src={require(`../../../img/home/carousel/c${i}.jpg`)}
+                    alt=""
                   />
                 </div>
               );
             }
             return (
               <div className="carousel-item w-100" key={i}>
-                <img className="d-block w-100" src={d.URL} alt={d.ImageName} />
+                <img
+                  className="d-block w-100"
+                  src={require(`../../../img/home/carousel/c${i}.jpg`)}
+                  alt=""
+                />
               </div>
             );
           })}
