@@ -172,7 +172,7 @@ const Routes = () => {
   // }, []);
 
   return (
-    <BrowserRouter basename="/">
+    <HashRouter basename="/">
       <div
         className={isModalOpen ? "modal" : "modal closed-modal"}
         id="modal"
@@ -627,7 +627,7 @@ const Routes = () => {
         <AdminRoute path="/admin/contact" exact component={ContactNumber} />
         <AdminRoute path="/admin/studpics" exact component={Studpics} /> */}
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 

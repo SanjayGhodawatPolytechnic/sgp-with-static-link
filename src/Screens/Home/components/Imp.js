@@ -22,7 +22,7 @@ const Imp = () => {
           />
           <div className="news-card__text-wrapper w-100">
             <h2 className="news-card__title">Mr. Sanjay Ghodawat</h2>
-            <div className="news-card__post-date">Chaiman</div>
+            <div className="news-card__post-date">Chairman</div>
             <div className="news-card__details-wrapper">
               <p className="news-card__excerpt">
                 Education is making students aware of the infinite potential
