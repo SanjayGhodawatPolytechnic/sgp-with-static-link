@@ -183,10 +183,16 @@
     transform: translateY(-50%);
     width: 90%;
   }
-}
-@media screen and (max-width: 576px) {
-  .swiper-slide-active .blog-slider__img {
-    width: 95%;
+
+  @media screen and (max-width: 576px) {
+    .swiper-slide-active .blog-slider__img {
+      width: 95%;
+    }
+    .swiper-slide-active .blog-slider__img {
+      width: 275px;
+
+      height: 250px;
+    }
   }
 }
 @media screen and (max-height: 500px) and (min-width: 992px) {
