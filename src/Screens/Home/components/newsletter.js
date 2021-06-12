@@ -54,12 +54,13 @@ const Newsletter = ({ setIsRecentsLoading }) => {
               Be the first one to know the updates related to the university{" "}
             </p>
           </div>
-          <form className="form-inline">
+          <form className="form-inline" onSubmit={onSubmit}>
             <div className="form-group">
               <input
                 className="form-control border-botton-2 border-bottom-primary"
                 type="email"
                 name="email"
+                required
                 placeholder="Your Email"
                 onChange={(e) => {
                   setData({ ...data, email: e.target.value });
@@ -68,13 +69,7 @@ const Newsletter = ({ setIsRecentsLoading }) => {
               />
             </div>
             <div className="form-group">
-              <button
-                className="btn btn-primary"
-                type="button"
-                onClick={(e) => {
-                  onSubmit(e);
-                }}
-              >
+              <button className="btn btn-primary" type="submit">
                 Subscribe{" "}
               </button>
             </div>
