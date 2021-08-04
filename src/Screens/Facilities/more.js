@@ -27,6 +27,14 @@ const Items = [
     image: "ATM01.jpg",
     caption: "ATM & Stationary",
   },
+  {
+    image: "seminar_room.jpg",
+    caption: "Seminar Room",
+  },
+  {
+    image: "Parking03.jpg",
+    caption: "Parking Area",
+  },
 ];
 const more = () => {
   return (
