@@ -8,6 +8,7 @@ import {
 import * as firebase from "firebase";
 import "react-notifications/lib/notifications.css";
 import "./Admission.css";
+import { CommonLoading } from "react-loadingg";
 
 const Admission = () => {
   const [data, setData] = useState({
@@ -15,11 +16,13 @@ const Admission = () => {
     email: "",
     phone: "",
     address: "",
-    interestedBranches: [],
-    caste: "",
+    interestedBranches: ["not provided"],
+    caste: "not provided",
     SSCMarks: "",
     hscMarks: "",
   });
+
+  const [loading, setLoading] = useState(false);
 
   const delElementFromInterestedBranches = (list, idx) => {
     list.splice(idx, 1);
@@ -49,32 +52,91 @@ const Admission = () => {
     }
   };
 
+  const formatData = (snapshot) => {
+    if (snapshot.val()) {
+      let result = Object.values(snapshot.val());
+      let keys = Object.keys(snapshot.val());
+      keys.forEach((val, idx) => {
+        result[idx]["key"] = val;
+      });
+      return result;
+    }
+  };
+
+  const getData = async (state) => {
+    const dbRef = firebase.database().ref("admission-req").child(state);
+    let data = await dbRef.once("value");
+    return formatData(data);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    const dbRef = firebase
-      .database()
-      .ref("admission-req")
-      .child("notResponded");
-    dbRef.push(data, (err) => {
-      if (!err) {
-        NotificationManager.success("We will reach you soon", "Data submitted");
-        fetch("https://sgpbackend.herokuapp.com/mail/sendGreetings", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(data),
-        })
-          .then((res) => {
-            console.log(res);
-          })
-          .catch((err) => {
-            console.log(err);
-          });
+    setLoading(true);
+    // if (data.interestedBranches.length === 0) {
+    //   setData({ ...data, interestedBranches: ["not", "provided"] });
+    // }
+    // if (!data.caste) {
+    //   setData({ ...data, caste: "not provided" });
+    // }
+    getData("Responded").then(async (res) => {
+      let notRes = await getData("notResponded");
+      let arr = res && notRes ? res.concat(notRes) : res || notRes;
+      let isDuplicate = false;
+      if (arr) {
+        console.log(arr);
+        arr.forEach((val) => {
+          if (val.email === data.email) {
+            isDuplicate = true;
+          }
+        });
+      }
+
+      if (!isDuplicate) {
+        const dbRef = firebase
+          .database()
+          .ref("admission-req")
+          .child("notResponded");
+        dbRef.push(data, (err) => {
+          if (!err) {
+            NotificationManager.success(
+              "We will reach you soon",
+              "Data submitted"
+            );
+            fetch("https://sgpbackend.herokuapp.com/mail/sendGreetings", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(data),
+            })
+              .then((res) => {
+                console.log(res);
+                setData({
+                  ...data,
+                  fullName: "",
+                  email: "",
+                  phone: "",
+                  address: "",
+                  interestedBranches: ["not provided"],
+                  caste: "not provided",
+                  SSCMarks: "",
+                  hscMarks: "",
+                });
+                setLoading(false);
+              })
+              .catch((err) => {
+                console.log(err);
+                setLoading(false);
+              });
+          }
+        });
+
+        // console.log(data);
+      } else {
+        NotificationManager.error("Error!!!", "Form alredy submitted");
+        setLoading(false);
       }
     });
-
-    console.log(data);
   };
   return (
     <Main>
@@ -161,6 +223,7 @@ const Admission = () => {
                   type="checkbox"
                   value="Civil"
                   onChange={handleChangeInterest}
+                  checked={data.interestedBranches.includes("Civil")}
                 />
                 <label className="checkbox-label" htmlFor="choice-0">
                   Civil
@@ -174,6 +237,7 @@ const Admission = () => {
                   type="checkbox"
                   value="Mechanical"
                   onChange={handleChangeInterest}
+                  checked={data.interestedBranches.includes("Mechanical")}
                 />
                 <label className="checkbox-label" htmlFor="choice-1">
                   Mechanical
@@ -187,6 +251,7 @@ const Admission = () => {
                   type="checkbox"
                   value="Computer Science"
                   onChange={handleChangeInterest}
+                  checked={data.interestedBranches.includes("Computer Science")}
                 />
                 <label className="checkbox-label" htmlFor="choice-2">
                   CSE
@@ -200,6 +265,7 @@ const Admission = () => {
                   type="checkbox"
                   value="E & TC"
                   onChange={handleChangeInterest}
+                  checked={data.interestedBranches.includes("E & TC")}
                 />
                 <label className="checkbox-label" htmlFor="choice-3">
                   E &amp; TC
@@ -213,6 +279,7 @@ const Admission = () => {
                   type="checkbox"
                   value="Electrical"
                   onChange={handleChangeInterest}
+                  checked={data.interestedBranches.includes("Electrical")}
                 />
                 <label className="checkbox-label" htmlFor="choice-4">
                   Electrical
@@ -231,6 +298,7 @@ const Admission = () => {
                   type="radio"
                   value="SC"
                   onChange={handleCasteChange}
+                  checked={data.caste.includes("SC")}
                 />
                 <label className="option-label" htmlFor="option-0">
                   SC
@@ -244,6 +312,7 @@ const Admission = () => {
                   type="radio"
                   value="ST"
                   onChange={handleCasteChange}
+                  checked={data.caste.includes("ST")}
                 />
                 <label className="option-label" htmlFor="option-1">
                   ST
@@ -257,6 +326,7 @@ const Admission = () => {
                   type="radio"
                   value="OBC"
                   onChange={handleCasteChange}
+                  checked={data.caste.includes("OBC")}
                 />
                 <label className="option-label" htmlFor="option-2">
                   OBC
@@ -270,6 +340,7 @@ const Admission = () => {
                   type="radio"
                   value="SBC"
                   onChange={handleCasteChange}
+                  checked={data.caste.includes("SBC")}
                 />
                 <label className="option-label" htmlFor="option-3">
                   SBC
@@ -283,6 +354,7 @@ const Admission = () => {
                   type="radio"
                   value="Open"
                   onChange={handleCasteChange}
+                  checked={data.caste.includes("Open")}
                 />
                 <label className="option-label" htmlFor="option-4">
                   Open
@@ -296,6 +368,7 @@ const Admission = () => {
                   type="radio"
                   value="EWS"
                   onChange={handleCasteChange}
+                  checked={data.caste.includes("EWS")}
                 />
                 <label className="option-label" htmlFor="option-5">
                   EWS
@@ -309,6 +382,7 @@ const Admission = () => {
                   type="radio"
                   value="NT-C,D"
                   onChange={handleCasteChange}
+                  checked={data.caste.includes("NT-C,D")}
                 />
                 <label className="option-label" htmlFor="option-6">
                   NT-C,D
@@ -322,6 +396,7 @@ const Admission = () => {
                   type="radio"
                   value="VJ/DT"
                   onChange={handleCasteChange}
+                  checked={data.caste.includes("VJ/DT")}
                 />
                 <label className="option-label" htmlFor="option-7">
                   VJ/DT
@@ -335,6 +410,7 @@ const Admission = () => {
                   type="radio"
                   value="Other"
                   onChange={handleCasteChange}
+                  checked={data.caste.includes("Other")}
                 />
                 <label className="option-label" htmlFor="option-8">
                   Other
@@ -374,7 +450,10 @@ const Admission = () => {
           </p>
 
           <p className="field half">
-            <input className="button" type="submit" defaultValue="Send" />
+            {loading && <CommonLoading />}
+            {!loading && (
+              <input className="button" type="submit" defaultValue="Send" />
+            )}
           </p>
         </form>
       </div>

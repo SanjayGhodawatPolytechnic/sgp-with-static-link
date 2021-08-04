@@ -14,12 +14,37 @@ const Newsletter = ({ setIsRecentsLoading }) => {
     postedOn: firebase.database.ServerValue.TIMESTAMP,
   });
 
+  const formatData = (dataSnapshot) => {
+    if (dataSnapshot.val()) {
+      let result = Object.values(dataSnapshot.val());
+      return result;
+    }
+  };
+
+  const getAllSubScribers = async () => {
+    let dataRef = firebase.database().ref("subscribers");
+    let data = await dataRef.once("value");
+    return formatData(data);
+  };
+
   const onSubmit = async (e) => {
     e.preventDefault();
-    const dbreference = firebase.database().ref("subscribers");
 
-    await dbreference.push(data, (err) => {
-      if (!err) {
+    if (!data.email) {
+      NotificationManager.error("Email is required!!!");
+      return;
+    }
+
+    getAllSubScribers().then((res) => {
+      console.log(res);
+
+      let isDuplicate = false;
+      res.forEach((val) => {
+        if (val.email === data.email) {
+          isDuplicate = true;
+        }
+      });
+      if (!isDuplicate) {
         fetch("https://sgpbackend.herokuapp.com/mail/sendGreetings", {
           method: "POST",
           headers: {
@@ -39,6 +64,8 @@ const Newsletter = ({ setIsRecentsLoading }) => {
         setData({
           email: "",
         });
+      } else {
+        NotificationManager.error("Email Alredy subscribed!!!");
       }
     });
   };
